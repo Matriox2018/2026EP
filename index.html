@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Cátedra | Matriox Oficial</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- Header / Navegación -->
+    <nav class="bg-blue-900 text-white p-4 sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="font-bold text-xl tracking-tight">Cátedra: Herramientas Digitales</h1>
+            <ul class="flex space-x-6 text-sm uppercase">
+                <li><a href="#procesadores" class="hover:text-blue-300">Textos</a></li>
+                <li><a href="#latex" class="hover:text-blue-300">LaTeX</a></li>
+                <li><a href="#ia" class="hover:text-blue-300">IA</a></li>
+                <li><a href="#geogebra" class="hover:text-blue-300">GeoGebra</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-gradient-to-r from-blue-800 to-indigo-900 text-white py-20 px-4 text-center">
+        <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Compendio de Contenidos</h2>
+        <p class="text-lg opacity-90 max-w-2xl mx-auto">Exploración de herramientas de procesamiento científico, inteligencia artificial generativa y simulación matemática.</p>
+    </header>
+
+    <main class="container mx-auto py-12 px-4 space-y-20">
+
+        <!-- Sección 1: Procesadores de Texto -->
+        <section id="procesadores" class="scroll-mt-20">
+            <div class="flex items-center mb-6">
+                <div class="h-1 w-12 bg-blue-600 mr-4"></div>
+                <h3 class="text-3xl font-bold">1. Procesadores de Texto</h3>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-blue-500">
+                    <h4 class="text-xl font-semibold mb-2 italic">Procesadores Estándar (Word)</h4>
+                    <p class="text-gray-600">Enfoque en la gestión de documentos extensos, uso de estilos jerárquicos, tablas de contenido automáticas y gestión de citas bibliográficas bajo normas APA.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-blue-500">
+                    <h4 class="text-xl font-semibold mb-2 italic">Procesadores Técnicos</h4>
+                    <p class="text-gray-600">Diferenciación entre editores WYSIWYG y sistemas de composición por código. Introducción al concepto de estructura lógica del documento.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 2: LaTeX -->
+        <section id="latex" class="scroll-mt-20 bg-gray-100 p-8 rounded-2xl">
+            <h3 class="text-3xl font-bold mb-6 text-center">2. LaTeX y Entornos Científicos</h3>
+            <div class="max-w-4xl mx-auto space-y-6">
+                <p>El estándar de oro para la comunicación científica. En la cátedra utilizamos:</p>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
+                    <div class="p-4 bg-white rounded shadow-sm font-mono text-blue-700">Overleaf</div>
+                    <div class="p-4 bg-white rounded shadow-sm font-mono text-blue-700">PCTeX</div>
+                    <div class="p-4 bg-white rounded shadow-sm font-mono text-blue-700">Beamer</div>
+                </div>
+                <div class="bg-gray-800 text-green-400 p-6 rounded-lg shadow-inner font-mono text-sm overflow-x-auto">
+                    <p>% Ejemplo de código visto en clase</p>
+                    <p>\documentclass{article}</p>
+                    <p>\begin{document}</p>
+                    <p>  La integral de la función es: $\int_{a}^{b} f(x) dx$</p>
+                    <p>\end{document}</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 3: IA -->
+        <section id="ia" class="scroll-mt-20">
+            <div class="flex items-center mb-6">
+                <div class="h-1 w-12 bg-purple-600 mr-4"></div>
+                <h3 class="text-3xl font-bold">3. Ecosistema de IA</h3>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6 text-center">
+                <div class="p-6 bg-purple-50 rounded-xl border border-purple-100">
+                    <h4 class="font-bold text-lg mb-2">Gemini</h4>
+                    <p class="text-sm">Multimodalidad y razonamiento lógico avanzado.</p>
+                </div>
+                <div class="p-6 bg-purple-50 rounded-xl border border-purple-100">
+                    <h4 class="font-bold text-lg mb-2">Claude</h4>
+                    <p class="text-sm">Excelencia en redacción técnica y análisis de código.</p>
+                </div>
+                <div class="p-6 bg-purple-50 rounded-xl border border-purple-100">
+                    <h4 class="font-bold text-lg mb-2">NotebookLM</h4>
+                    <p class="text-sm">Gestión de fuentes y creación de bases de conocimiento.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 4: GeoGebra -->
+        <section id="geogebra" class="scroll-mt-20 pb-20">
+            <h3 class="text-3xl font-bold mb-6">4. Visualización con GeoGebra</h3>
+            <div class="bg-blue-50 border-2 border-dashed border-blue-200 p-12 rounded-3xl text-center">
+                <p class="text-blue-800 mb-4 font-medium italic">"Aquí los alumnos deben insertar su Applet dinámico mediante iframe"</p>
+                <div class="bg-white h-64 w-full max-w-2xl mx-auto rounded shadow-lg flex items-center justify-center">
+                    <span class="text-gray-400 text-sm">[ Espacio para Gráfico Interactivo de Funciones ]</span>
+                </div>
+            </div>
+<div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-blue-500 text-center">
+    <h4 class="text-xl font-semibold mb-4 italic">Captura de Interfaz Word</h4>
+    <!-- Aquí va la imagen -->
+    <img src="img/woruno.jpg" alt="Interfaz de Microsoft Word" class="mx-auto h-48 object-cover rounded shadow">
+    <p class="text-gray-600 mt-4">Descripción técnica de la herramienta.</p>
+</div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 py-8 text-center text-sm">
+        <p>&copy; 2026 - Universidad Nacional de San Juan</p>
+        <p class="mt-2 tracking-widest uppercase">FFHA | Departamento de Matemática</p>
+    </footer>
+
+</body>
+</html>
